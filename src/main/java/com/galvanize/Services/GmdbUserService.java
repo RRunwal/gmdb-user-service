@@ -38,10 +38,10 @@ public class GmdbUserService {
 
     public int logout(User user) {
         if (user != null && user.getId() != null) {
-            return 200;
+            return 400;
         }
         else {
-            return 400;
+            return 200;
         }
     }
 
