@@ -15,6 +15,8 @@ public class GmdbUserServiceTests {
     @Autowired
     GmdbUserService gmdbUserService;
 
+    //NOTE: test data has been loaded into the user table in gmdb database.
+    //please see file "download.sql" in gmdb-movies-project
     @Test
     void validateUser() {
         User user = gmdbUserService.validateUser("rrunwal@aol.com", "rrunwal");

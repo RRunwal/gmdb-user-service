@@ -14,6 +14,8 @@ public class UserRepositoryTests {
     @Autowired
     UserRepository userRepository;
 
+    //NOTE: test data has been loaded into the user table in gmdb database.
+    //please see file "download.sql" in gmdb-movies-project
     @Test
     void findUserByEmail() {
         User user = userRepository.findUserByEmail("rrunwal@aol.com");

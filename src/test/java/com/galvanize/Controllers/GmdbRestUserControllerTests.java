@@ -37,6 +37,8 @@ public class GmdbRestUserControllerTests {
     MockMvc mvc;
 
 
+    //NOTE: test data has been loaded into the user table in gmdb database.
+    //please see file "download.sql" in gmdb-movies-project
     @Test
     void testPostLoginSucess() throws Exception {
         String json = "{\"email\":\"rrunwal@aol.com\",\"password\":\"rrunwal1\"}";
